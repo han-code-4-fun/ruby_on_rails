@@ -27,6 +27,7 @@ class ArticlesController < ApplicationController
       if @article.save
         format.html { redirect_to article_path(@article), notice: 'Article was successfully created.' }
         format.json { render :show, status: :created, location: @article }
+        flash[:info] = 'article has been savedddddd'
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @article.errors, status: :unprocessable_entity }
