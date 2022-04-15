@@ -15,6 +15,7 @@
   </td>
 
   <td>
-    <%= link_to "Show this article", article %>
+    <%= link_to 'del', article_path(article), data: {turbo_confirm: "are you sure?",  turbo_method: :delete} %>
+    <%= link_to 'show', article_path(article) %>
   </td>
 </tr>
