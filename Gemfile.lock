@@ -92,6 +92,7 @@ GEM
       reline (>= 0.2.7)
     digest (3.1.0)
     erubi (1.10.0)
+    ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -234,6 +235,7 @@ DEPENDENCIES
   capybara
   cssbundling-rails
   debug
+  ffi
   jbuilder
   jsbundling-rails
   puma (~> 5.0)
