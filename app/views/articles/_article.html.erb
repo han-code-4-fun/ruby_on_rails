@@ -1,12 +1,20 @@
-<div id="<%= dom_id article %>">
-  <p>
+<tr id="<%= dom_id article %>">
+  <td>
     <strong>Title:</strong>
     <%= article.title %>
-  </p>
+  </td>
 
-  <p>
+  <td>
     <strong>Description:</strong>
     <%= article.description %>
-  </p>
+  </td>
 
-</div>
+  <td>
+    <strong>Author:</strong>
+    <%= article.author %>
+  </td>
+
+  <td>
+    <%= link_to "Show this article", article %>
+  </td>
+</tr>
