@@ -8,6 +8,7 @@
 
 .page-content {
   background-color: grey;
+  flex: 1 0 auto;
 }
 
 #logo {
@@ -40,8 +41,4 @@ h2 {
 html,
 body {
   height: 100%;
-}
-
-#page-content {
-  flex: 1 0 auto;
 }

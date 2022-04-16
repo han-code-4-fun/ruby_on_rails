@@ -1,12 +1,10 @@
-<div class="page-content">
-  <h1 class="text-center mt-4">Article list</h1>
+<h1 class="text-center mt-4">Article list</h1>
 
-    <div id="articles">
-      <% @articles.each do |article| %>
-        <%= render article %>
-        
-      <% end %>
-    </div>
+  <div id="articles">
+    <% @articles.each do |article| %>
+      <%= render article %>
+      
+    <% end %>
+  </div>
 
-  <%= link_to "New article", new_article_path %>
-</div>
+<%= link_to "New article", new_article_path %>
