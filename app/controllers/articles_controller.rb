@@ -31,7 +31,7 @@ class ArticlesController < ApplicationController
           redirect_to article_path(@article), notice: 'Article was successfully created.'
         end # here will be used by show.htmle.erb
         format.json { render :show, status: :created, location: @article }
-        flash[:info] = 'article has been savedddddd'
+        # flash[:info] = 'article has been savedddddd'
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @article.errors, status: :unprocessable_entity }
