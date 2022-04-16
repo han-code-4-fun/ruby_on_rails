@@ -33,6 +33,8 @@ gem 'jbuilder'
 
 gem 'rubocop', '~> 1.26', require: false
 
+gem 'sassc-rails'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
