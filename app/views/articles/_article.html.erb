@@ -8,6 +8,7 @@
       <div class="card-body">
         <p class="card-text"><%= truncate(article.description, length: 100) %></p> 
         <h5 class="card-title font-italic"><%= article.author %></h5>
+        by <%= article.user.username %> <br>
         <%= link_to 'del', article_path(article), data: {turbo_confirm: "are you sure?",  turbo_method: :delete}, class: "btn btn-danger" %>
         <%= link_to 'show', article_path(article), class: "btn btn-success" %>
       </div>
